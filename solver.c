@@ -83,11 +83,8 @@ void initBoard() {
 }
 
 void printBoard() {
-	// int status = system("clear");  // Clears the screen in Unix/Linux
-	printf("   3 4 5 6 7 8 9\n");
     for (int i = 3; i < 10; i++) {
         for (int j = 3; j < 10; j++) {
-			if (j==3) printf("%2d ",i);
             if (board[i][j] == -1) printf("X ");
               else if (board[i][j] == -2) printf(". ");
                   else printf("%d ", board[i][j]);
